@@ -1,0 +1,30 @@
+site_name: My Docs
+site_url: https://elieahd.github.io/my-docs/
+site_author: Elie Daher
+
+repo_name: elieahd/my-docs
+repo_url: https://github.com/elieahd/my-docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+plugins: 
+  - search
+
+nav:
+- Home: "index.md"
+- Tech:
+  - Tips: 
+    - Debugging a Java Stream in Intellij: tech/tips/java-stream-intellij.md
+    - JSON processing in shell with jq: tech/tips/jq.md
+    - My most used K8S commands: tech/tips/k8s-commands.md
