@@ -43,6 +43,11 @@ theme:
 plugins: 
   - search
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
 nav:
 - Home: "index.md"
 - Tech:
