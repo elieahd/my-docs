@@ -6,7 +6,7 @@ In IntelliJ, you can debug a stream by setting a breakpoint on it and then click
 
 For example, let’s say we have the following Java code:
 
-``` java
+```java
 import java.util.stream.Stream;
 
 public class Main {
