@@ -25,6 +25,7 @@ nav:
 - Home: "index.md"
 - Tech:
   - Tips: 
-    - Debugging a Java Stream in Intellij: tech/tips/java-stream-intellij.md
+    - Debugging a Java Stream in IntelliJ: tech/tips/java-stream-intellij.md
     - JSON processing in shell with jq: tech/tips/jq.md
     - My most used K8S commands: tech/tips/k8s-commands.md
+    - API conventions: tech/tips/api-conventions.md
