@@ -1,5 +1,9 @@
 site_name: My Docs
 site_url: https://github.com/pages/elieahd/my-docs
+site_author: Elie Daher
+
+repo_name: elieahd/my-docs
+repo_url: https://github.com/elieahd/my-docs
 
 theme:
   name: material
@@ -8,9 +12,6 @@ plugins:
   - search
   - minify
   - navincluder
-
-repo_url: https://github.com/elieahd/my-docs
-repo_name: elieahd/my-docs
 
 nav:
 - Home: "index.md"
