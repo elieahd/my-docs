@@ -91,6 +91,8 @@ HTTP methods (GET, POST, PUT, DELETE, etc.) are used to perform actions on those
 ⛔ `POST /v1/categories/update`
 ✅ `PUT /v1/categories`
 
+#### Use Cases
+
 | Endpoint                        | Use Case                                      |
 | ------------------------------- | --------------------------------------------- |
 | `GET /v1/categories`            | Get all categories                            |
