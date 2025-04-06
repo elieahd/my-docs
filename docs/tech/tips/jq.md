@@ -1,4 +1,4 @@
-# JSON processing in shell with `jq`
+# JSON processing in command line with `jq`
 
 `jq` is a command line JSON processor which will help you pretty-print and filter a JSON in a terminal
 

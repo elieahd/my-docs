@@ -53,6 +53,9 @@ nav:
 - Tech:
   - Tips: 
     - Debugging a Java Stream in IntelliJ: tech/tips/java-stream-intellij.md
-    - JSON processing in shell with jq: tech/tips/jq.md
+    - JSON processing with jq: tech/tips/jq.md
+    - Text processing with awk: tech/tips/awk.md
+    - Searching through files with grep: tech/tips/grep.md
+    - Transform and replace text in files with sed: tech/tips/sed.md
     - My most used K8S commands: tech/tips/k8s-commands.md
     - API conventions: tech/tips/api-conventions.md
