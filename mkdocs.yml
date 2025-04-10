@@ -59,5 +59,5 @@ nav:
     - 05 - Text processing with awk: tech/tips/awk.md
     - 06 - Searching through files with grep: tech/tips/grep.md
     - 07 - Transform and replace text in files with sed: tech/tips/sed.md
-    - 08 - Making HTTP requests with Curl: tech/tips/curl.md
-    - 09 - Resilience Testing with Chaos Engineering in Spring Boot: tech/tips/chaos.md
+    - 08 - Making HTTP requests with curl: tech/tips/curl.md
+    - 09 - Resilience testing with chaos engineering: tech/tips/chaos.md
