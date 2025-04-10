@@ -25,9 +25,9 @@ It helps ensure consistency and better reflects the possibility of the endpoint 
 Use hyphens `-` to improve the readability of URIs, do not use underscores `_`
 
 ⛔ `GET /managed_devices`
-✅ `GET /myfolders`
+✅ `GET /managed-devices`
 
-⛔ `GET /managed-devices`
+⛔ `GET /myFolders`
 ✅ `GET /my-folders`
 
 ### Use lowercase letters
