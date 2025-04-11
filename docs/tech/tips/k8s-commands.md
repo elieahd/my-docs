@@ -1,4 +1,4 @@
-# Some K8S commands
+# My most used K8S commands
 
 ## Deployments
 ```sh
