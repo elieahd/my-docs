@@ -17,14 +17,17 @@ theme:
     - content.code.annotation
     - content.code.copy
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
+        name: Switch to dark mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -39,7 +42,7 @@ markdown_extensions:
   - toc
 
 nav:
-- Home: "index.md"
+- Home: index.md
 - Tech:
   - Tips: 
     - 01 - Debugging a Java Stream in IntelliJ: tech/tips/java-stream-intellij.md
