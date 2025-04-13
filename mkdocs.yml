@@ -17,24 +17,14 @@ theme:
     - content.code.annotation
     - content.code.copy
   palette:
-    - media: "(prefers-color-scheme)"
+    - scheme: default
       toggle:
-        icon: material/link
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch-off
-        name: Switch to system preference
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
