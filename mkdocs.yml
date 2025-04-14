@@ -53,8 +53,8 @@ nav:
 - Tips: 
   - 01 - Debugging a Java Stream in IntelliJ: tips/001-java-stream-intellij.md
   - 02 - JSON processing with jq: tips/002-jq.md
-  - 03 - API conventions: tips/003-api-conventions.md
-  - 04 - My most used K8S commands: tips/004-k8s-commands.md
+  - 03 - API conventions: tips/003-api.md
+  - 04 - My most used K8S commands: tips/004-kubectl.md
   - 05 - Text processing with awk: tips/005-awk.md
   - 06 - Searching through files with grep: tips/006-grep.md
   - 07 - Transform and replace text in files with sed: tips/007-sed.md
