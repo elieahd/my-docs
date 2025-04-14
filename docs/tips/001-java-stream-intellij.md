@@ -29,12 +29,12 @@ public class Main {
 
 By clicking ‘Trace Current Stream Chain’ 
 
-![trace current stream chain](../../assets/tech/tips/trace.png)
+![trace current stream chain](../../assets/tips/trace.png)
 
 We can have a split mode of each step 
 
-![split mode](../../assets/tech/tips/split-mode.png)
+![split mode](../../assets/tips/split-mode.png)
 
 Or we can have a global flat mode
 
-![flat mode](../../assets/tech/tips/flat-mode.png)
+![flat mode](../../assets/tips/flat-mode.png)
