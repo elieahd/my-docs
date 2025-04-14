@@ -56,6 +56,14 @@ kubectl get jobs
     -n <namespace>
 ```
 
+Trigger/Launch job
+
+```sh
+kubectl create job <job-name> 
+    --from=cronjob/<cron-job-name>
+    -n <namespace>
+```
+
 ## Pods 
 ```sh
 kubectl get pods -n <namespace>
