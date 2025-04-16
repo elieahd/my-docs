@@ -50,13 +50,16 @@ markdown_extensions:
 
 nav:
 - Home: index.md
-- Tips: 
-  - 01 - Debugging a Java Stream in IntelliJ: tips/001-java-stream-intellij.md
-  - 02 - JSON processing with jq: tips/002-jq.md
-  - 03 - API conventions: tips/003-api.md
-  - 04 - My most used K8S commands: tips/004-kubectl.md
-  - 05 - Text processing with awk: tips/005-awk.md
-  - 06 - Searching through files with grep: tips/006-grep.md
-  - 07 - Transform and replace text in files with sed: tips/007-sed.md
-  - 08 - Making HTTP requests with curl: tips/008-curl.md
-  - 09 - Resilience testing with chaos engineering: tips/009-chaos.md
+- Tech: 
+  - Backend:
+    - Debugging a Java Stream in IntelliJ: tech/backend/java-stream-intellij.md 
+    - API guidelines: tech/backend/api-guidelines.md
+    - Resilience testing with chaos engineering: tech/backend/chaos.md
+  - Devops: 
+    - My most used K8S commands: tech/devops/kubectl.md
+  - Shell:
+    - JSON processing with jq: tech/shell/jq.md
+    - Text processing with awk: tech/shell/awk.md
+    - Searching through files with grep: tech/shell/grep.md
+    - Transform and replace text in files with sed: tech/shell/sed.md
+    - Making HTTP requests with curl: tech/shell/curl.md
