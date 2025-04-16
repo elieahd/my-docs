@@ -54,6 +54,7 @@ nav:
   - Backend:
     - Debugging a Java Stream in IntelliJ: tech/backend/java-stream-intellij.md 
     - API guidelines: tech/backend/api-guidelines.md
+    - Structure unit tests: tech/backend/aaa.md
     - Resilience testing with chaos engineering: tech/backend/chaos.md
   - Devops: 
     - My most used K8S commands: tech/devops/kubectl.md
