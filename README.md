@@ -8,8 +8,6 @@ You can find my list of tips/mini-blog : [here](https://elieahd.github.io/my-doc
 
 ### Tech
 - Searching through files with grep
-- Transform and replace text in files with sed
-- Making HTTP requests with curl
 
 ### Tutorials 
 - Build a spring boot application

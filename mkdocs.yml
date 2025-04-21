@@ -61,4 +61,5 @@ nav:
     - JSON processing with jq: tech/shell/jq.md
     - Text processing with awk: tech/shell/awk.md
     - Making HTTP requests with curl: tech/shell/curl.md
+    - Text Editing with sed: tech/shell/sed.md
 

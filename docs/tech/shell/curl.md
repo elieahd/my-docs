@@ -2,7 +2,6 @@
 
 `curl` is a command-line tool used to transfer data to or from a server using HTTP. It’s especially handy for APIs.
 
-
 ```sh
 curl https://example.com
 ```
