@@ -58,8 +58,9 @@ nav:
   - Devops: 
     - My most used K8S commands: tech/devops/kubectl.md
   - Shell:
-    - JSON processing with jq: tech/shell/jq.md
+    - Text editing with sed: tech/shell/sed.md
+    - Text searching with grep: tech/shell/grep.md
     - Text processing with awk: tech/shell/awk.md
     - Making HTTP requests with curl: tech/shell/curl.md
-    - Text Editing with sed: tech/shell/sed.md
+    - JSON processing with jq: tech/shell/jq.md
 

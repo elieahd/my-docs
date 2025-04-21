@@ -1,4 +1,4 @@
-# Text Editing with sed
+# Text editing with sed
 
 `sed`, short for Stream Editor, is a Unix utility that parses and transforms text, often in a single line of code.
 

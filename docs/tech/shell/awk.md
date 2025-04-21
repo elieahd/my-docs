@@ -1,4 +1,4 @@
-# Text processing in command line with `awk`
+# Text processing with `awk`
 
 `awk` is a command-line tool used for pattern scanning and processing. It's helps search, extract and transform text based on patterns. It's also handy when working with files.
 

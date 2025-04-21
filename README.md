@@ -6,9 +6,6 @@ You can find my list of tips/mini-blog : [here](https://elieahd.github.io/my-doc
 
 ## WIP
 
-### Tech
-- Searching through files with grep
-
 ### Tutorials 
 - Build a spring boot application
 - Hexagonal Architecture
