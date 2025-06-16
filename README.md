@@ -7,7 +7,6 @@ You can find my list of tips/mini-blog : [here](https://elieahd.github.io/my-doc
 ## WIP
 
 ### Tutorials 
-- Build a spring boot application
 - Hexagonal Architecture
 - CI/CD on pull requests w/ Github Actions
 - Resilience testing with chaos engineering
