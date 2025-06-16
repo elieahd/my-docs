@@ -64,3 +64,13 @@ nav:
     - Making HTTP requests with curl: tech/shell/curl.md
     - JSON processing with jq: tech/shell/jq.md
   - Tech debt: tech/tech-debt.md
+- Notes: 
+  - TOGAF:
+    - Foundation:
+      - Unit 1 Introduction and Concepts: notes/togaf/foundation/unit1.md
+      - Unit 2 Definitions: notes/togaf/foundation/unit2.md
+      - Unit 3 Introduction to the ADM Phases: notes/togaf/foundation/unit3.md
+      - Unit 4 Introduction to ADM Techniques: notes/togaf/foundation/unit4.md
+      - Unit 5 Introduction to Applying the ADM: notes/togaf/foundation/unit5.md
+      - Unit 6 Introduction to Architecture Governance: notes/togaf/foundation/unit6.md
+      - Unit 7 Architecture Content: notes/togaf/foundation/unit7.md
