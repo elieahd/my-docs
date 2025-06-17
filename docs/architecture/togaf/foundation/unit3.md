@@ -1,26 +1,27 @@
-The `ADM`, Architecture Development Method, is a detailed step by step process for developing or changing an enterprise architecture (EA)
+The `ADM`, Architecture Development Method, is a detailed step by step process for developing or changing an enterprise architecture
 
-<div style="text-align: center;">
-  <img src="../../../assets/togaf/adm.png" alt="adm" />
-</div>
+![adm](../../../assets/togaf/adm.png)
 
 ## Phases
 
 ### Preliminary Phase
 
 Determine the Architecture Capability desired by the organization:
+
 * Review the organizational context for conducting Enterprise Architecture
 * Identify and scope the elements of the enterprise organizations
 * Identify the established frameworks, methods, and processes
 * Establish Capability Maturity target
 
 Establish the Architecture Capability:
+
 * Define and establish the Organizational Model
 * Define and establish the detailed process and resources for Architecture Governance
 * Select and implement tools that support the Architecture Capability
 * Define the Architecture Principles
 
 Deliverables: 
+
 * Request for Architecture Work (Demande de mise en chantier d'architecture)
 * Architecture Principles
 
@@ -31,6 +32,7 @@ Deliverables:
 * Assess the capability of the Enterprise Architecture team
 
 Deliverables:
+
 * Statement of Architecture Work (stakeholders need to agree on a summary of the target)
 * Architecture Vision
 
