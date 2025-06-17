@@ -47,3 +47,8 @@ Every word in a principle statement should be carefully chosen to allow consiste
 Principles should be enduring, yet able to accommodate changes.
 
 An amendment process should be established for adding, removing, or altering principles after they are ratified initially.
+
+## Business Scenarios
+
+A method used to help identify and understand the business requirements that an architecture must address
+
