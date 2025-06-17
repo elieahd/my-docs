@@ -14,7 +14,6 @@ Architecture Principles should address the following purposes:
 | `Rationale` | Should highlight the business benefits of adhering to the principle, using business terminology <br/> Should describe the relationship to other principles |
 | `Implications` | Should highlight the requirements for the business and for IT for carrying out the principle <br/> Should state the business impact and consequences of adopting the principle |
 
-
 ## Qualities of Architecture Principles
 
 ### Understandable
@@ -35,7 +34,13 @@ Every potentially important principle governing the management of information an
 
 ### Consistent
 
-Strict adherence to one principle may require a loose interpretation of another principle. The set of principles must be expressed in a way that allows a balance of interpretations. Principles should not be contradictory to the point where adhering to one principle would violate the spirit of another. Every word in a principle statement should be carefully chosen to allow consistent yet flexible interpretation
+Strict adherence to one principle may require a loose interpretation of another principle. 
+
+The set of principles must be expressed in a way that allows a balance of interpretations. 
+
+Principles should not be contradictory to the point where adhering to one principle would violate the spirit of another. 
+
+Every word in a principle statement should be carefully chosen to allow consistent yet flexible interpretation
 
 ### Stable
 
