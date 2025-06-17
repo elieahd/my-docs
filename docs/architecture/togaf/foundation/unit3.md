@@ -1,20 +1,38 @@
 The `ADM`, Architecture Development Method, is a detailed step by step process for developing or changing an enterprise architecture (EA)
 
-![adm](../../../assets/togaf/adm.png)
+<div style="text-align: center;">
+  <img src="../../../assets/togaf/adm.png" alt="adm" />
+</div>
 
 ## Phases
 
 ### Preliminary Phase
-The preparation and initiation activities required to create an Architecture Capability including customization of the TOGAF framework and definition of Architecture Principles
 
-Define architecture principles, establish governance, select tools, and frameworks.
+Determine the Architecture Capability desired by the organization:
+* Review the organizational context for conducting Enterprise Architecture
+* Identify and scope the elements of the enterprise organizations
+* Identify the established frameworks, methods, and processes
+* Establish Capability Maturity target
+
+Establish the Architecture Capability:
+* Define and establish the Organizational Model
+* Define and establish the detailed process and resources for Architecture Governance
+* Select and implement tools that support the Architecture Capability
+* Define the Architecture Principles
+
+Deliverables: 
+* Request for Architecture Work (Demande de mise en chantier d'architecture)
+* Architecture Principles
 
 ### Phase A: Architecture Vision
-The initial phase of an architecture development cycle. Information about defining the scope of the architecture development initiative, identifying the stakeholders, creating the Architecture Vision, and obtaining approval to proceed with the architecture development
 
-Define the scope, vision, and stakeholders for the architecture effort
+* Define the scope of the Architecture Project
+* Identify stakeholders, concerns, and associated requirements
+* Assess the capability of the Enterprise Architecture team
 
-Statement of Architecture Work, high-level vision, business case, stakeholder map
+Deliverables:
+* Statement of Architecture Work (stakeholders need to agree on a summary of the target)
+* Architecture Vision
 
 ### Phase B: Business Architecture
 Development of a Business Architecture to support the agreed Architecture Vision
@@ -28,7 +46,7 @@ Divided into two sub-phases:
 
 Data Architecture: Define data entities, relationships, data governance
 
-Application Architecture: Identify applications, their interactions, and alignment with business needs.
+Application Architecture: Identify applications, their interactions, and alignment with business needs
 
 ### Phase D: Technology Architecture
 Define the logical and physical technology infrastructure to support the agreed Architecture Vision
