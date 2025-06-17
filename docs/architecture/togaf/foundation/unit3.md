@@ -36,51 +36,74 @@ Deliverables:
 * Statement of Architecture Work (stakeholders need to agree on a summary of the target)
 * Architecture Vision
 
+> Phase B, C, & D : A set of domain architectures approved by the stakeholders for the problem being addressed, with a set of gaps, and work to clear the gaps understood by the stakeholders (building blocks)
+
 ### Phase B: Business Architecture
-Development of a Business Architecture to support the agreed Architecture Vision
 
-Focus Areas: Business processes, organizational structure, capabilities, roles
+Development of the target Business Architecture to support the agreed Architecture Vision and stakeholder concerns
 
-### Phase C: Information Systems Architectures
-Development of Information Systems Architectures to support the agreed Architecture Vision
+Workshop with the business to understand more the business requirements
 
-Divided into two sub-phases:
+### Phase C: Information Systems Architecture
 
-Data Architecture: Define data entities, relationships, data governance
+Development of the target Information Systems Architectures, describing how the enterprise’s Information Systems 
 
-Application Architecture: Identify applications, their interactions, and alignment with business needs
+Development of the Target Data Architecture that enables the Business Architecture and the Architecture Vision, in a way that addresses the Statement of Architecture Work and stakeholder concerns
+
+Divided into two domain:
+* Data Architecture: Define data entities, relationships, data governance
+* Application Architecture: Identify applications, their interactions, and alignment with business needs
 
 ### Phase D: Technology Architecture
+
 Define the logical and physical technology infrastructure to support the agreed Architecture Vision
 
 Focus: Networks, platforms, services, and infrastructure technologies
 
 ### Phase E: Opportunities & Solutions
-Initial implementation planning and the identification of delivery vehicles for the architecture defined in the previous phases
 
-Activities: Gap analysis, define solution building blocks (SBBs), roadmap components
+Generate the initial complete version of the Architecture Roadmap, based upon the gap analysis and candidate Architecture Roadmap components from Phases B, C, and D
+
+Determine whether an incremental approach is required, and if so identify Transition Architectures that will deliver continuous business value
+
+Define the overall Solution Building Blocks (SBBs) to finalize the Target Architecture based on the ABBs
+
+Dependency between the set of changes. (Work Package & Gap dependency)
+
+Value, effort, and risk associated with each change and work package.
 
 ### Phase F: Migration Planning
-How to move from the Baseline to the Target Architectures by finalizing a detailed Implementation and Migration Plan
 
-Activities: Prioritize projects, assign resources, assess risks and costs
+Finalize the Architecture Roadmap and the supporting Implementation and Migration Plan
+
+Ensure that the Implementation and Migration Plan is co-ordinated with the enterprise’s approach to managing and implementing change in the enterprise’s overall change portfolio
+
+Ensure that the business value and cost of work packages and Transition Architectures is understood by key stakeholders
 
 ### Phase G: Implementation Governance
-Architectural oversight of the implementation, to ensure that it aligns with architecture
 
-Activities: Monitor, guide solution development, validate conformance
+Ensure conformance with the Target Architecture by Implementation Projects
+
+Perform appropriate Architecture Governance functions for the solution and any implementation-driven architecture Change Requests
 
 ### Phase H: Architecture Change Management
+
 Procedures for managing change to the new architecture
 
-Activities: Monitor business and IT changes, update architecture as needed
+* Ensure that the architecture development cycle is maintained
+* Ensure that the Architecture Governance framework is executed
+* Ensure that the Enterprise Architecture Capability meets current requirements
 
 ### Requirements Management
-Operates the process of managing architecture requirements throughout the ADM. It's a continuous phase which ensures that any changes to requirements are handled through appropriate governance processes and reflected in all other phases
 
-Role: Acts as a central repository and validation mechanism for all phases
+Acts as a central repository and validation mechanism for all phases
+
+* Ensure that the Requirements Management process is sustained and operates for all relevant ADM phases.
+* Manage Architecture Requirements identified during any execution of the ADM cycle or a phase.
+* Ensure that relevant Architecture Requirements are available for use by each phase as the phase is executed.
 
 ## Scope
+
 The scope of an architecture is first expressed in terms of `breadth`, `depth`, and `time`
 
 * `Breadth`: what is the full extent of the enterprise, and what part of that extent will this architecting effort deal with?
