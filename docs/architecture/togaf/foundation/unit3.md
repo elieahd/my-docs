@@ -3,7 +3,7 @@ The `ADM`, Architecture Development Method, is a detailed step by step process f
 ![adm](../../../assets/togaf/adm.png)
 
 * The `Preliminary Phase`: The preparation and initiation activities required to create an Architecture Capability including customization of the TOGAF framework and definition of Architecture Principles
-* Phase A: `Architecture Vision`: The initial phase of an architecture development cycle It includes information about defining the scope of the architecture development initiative, identifying the stakeholders, creating the Architecture Vision, and obtaining approval to proceed with the architecture development.
+* Phase A: `Architecture Vision`: The initial phase of an architecture development cycle. Information about defining the scope of the architecture development initiative, identifying the stakeholders, creating the Architecture Vision, and obtaining approval to proceed with the architecture development.
 * Phase B: `Business Architecture`: Development of a Business Architecture to support the agreed Architecture Vision
 * Phase C: `Information Systems Architectures`: Development of Information Systems Architectures to support the agreed Architecture Vision
 * Phase D: `Technology Architecture`: Development of the Technology Architecture to support the agreed Architecture Vision
