@@ -67,10 +67,10 @@ nav:
 - Architecture: 
   - TOGAF:
     - Foundation:
-      - 1. Introduction and Concepts: architecture/togaf/foundation/unit1.md
-      - 2. Definitions: architecture/togaf/foundation/unit2.md
-      - 3. Introduction to the ADM Phases: architecture/togaf/foundation/unit3.md
-      - 4. Introduction to ADM Techniques: architecture/togaf/foundation/unit4.md
-      - 5. Introduction to Applying the ADM: architecture/togaf/foundation/unit5.md
-      - 6. Introduction to Architecture Governance: notes/togaf/foundation/unit6.md
-      - 7. Architecture Content: architecture/togaf/foundation/unit7.md
+      - Introduction and Concepts: architecture/togaf/foundation/unit1.md
+      - Definitions: architecture/togaf/foundation/unit2.md
+      - ADM Phases: architecture/togaf/foundation/unit3.md
+      - ADM Techniques: architecture/togaf/foundation/unit4.md
+      - Applying the ADM: architecture/togaf/foundation/unit5.md
+      - Architecture Governance: notes/togaf/foundation/unit6.md
+      - Architecture Content: architecture/togaf/foundation/unit7.md
