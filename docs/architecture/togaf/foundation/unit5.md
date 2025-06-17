@@ -21,4 +21,3 @@ The architectural representation of assets in use, or planned, by the enterprise
 * Enterprise Architecture to Support Portfolio: Deliver Enterprise Architecture to support cross-functional, multi-phase, and multi-project change initiatives
 * Enterprise Architecture to Support Project: Deliver Enterprise Architecture to support the enterprise’s project delivery method
 * Enterprise Architecture to Support Solution Delivery: Deliver Enterprise Architecture that is used to support the solution deployment
-
