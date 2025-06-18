@@ -1,0 +1,40 @@
+## Hexagonal Architecture 
+
+Hexagonal Architecture is a software design pattern that emphasizes separation of concerns, testability, and flexible infrastructure integration. 
+
+It focuses on isolating the core business logic from external systems like databases, UIs, and APIs.
+
+![hexagonal architecture](../assets/hexagonal-architecture.png)
+
+#### Core domain 
+
+This is the center of the hexagon, and contains : Business rules, Domain models, Application services (use cases).
+
+It should not depend on any framework or external technology.
+
+#### Ports (Interfaces)
+
+Ports define how the application expects to interact with the outside world.
+
+There are two types:
+
+* Inbound Ports: Interfaces used to enter the application (e.g., use case interfaces, controller service interfaces)
+* Outbound Ports: Interfaces the application uses to communicate outward (e.g., repository interfaces, messaging service interfaces)
+
+#### Adapters
+
+Adapters implement the ports.
+
+There are two types:
+
+* Inbound Adapters: Trigger the application (e.g., REST controllers, CLI handlers, message listeners)
+* Outbound Adapters: Provide implementations for outbound ports (e.g., JPA repositories, REST clients, Kafka producers)
+
+## Project structure 
+
+## Use case : Blogger 
+
+### Unit testing with in stubs (in memory adapter)
+
+### Unit testing the architecture with ArchUnit 
+
