@@ -65,7 +65,7 @@ nav:
     - JSON processing with jq: tech/shell/jq.md
   - Tech debt: tech/tech-debt.md
 - Architecture: 
-  - Hexagonal Architecture: architecture/hexagonal-architecture.md
+  - Hexagonal Architecture: architecture/hexagonal.md
   - TOGAF:
     - Foundation:
       - Introduction and Concepts: architecture/togaf/foundation/unit1.md
