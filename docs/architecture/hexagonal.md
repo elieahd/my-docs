@@ -55,6 +55,48 @@ There are two types:
 
 ## Use case : Blogger 
 
+Let's take a use case about designing a blogging platform that allow publish content in the form of posts.
+
+In the traditional architecture we would found ourself with the current structure 
+
+```
+├── models
+├────── Category
+├────── Post
+├── repositories
+├────── CategoryRepository
+├────── PostRepository
+├── services
+├────── CategoryService
+├────── PostService
+├── controllers
+├────── PostController
+├────── CategoryController
+├── BloggerApplication
+└── 
+```
+
+check current branch : [`traditional`](todo) 
+
+To apply the hexagonal architecture to current use case, we would end up with the following structure 
+
+
+```
+├── domain
+├────── entities
+├────────── Category
+├────────── Post
+├────── inbound
+├────────── CreatePost
+├────────── SearchPost
+├────────── GetCategories
+├────── outbound
+├────────── CategoryInventory
+├────────── PostInventory
+├────── services
+└── 
+```
+
 ### Unit testing with in stubs (in memory adapter)
 
 ### Unit testing the architecture with ArchUnit 
