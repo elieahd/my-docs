@@ -32,6 +32,27 @@ There are two types:
 
 ## Project structure 
 
+```
+├── domain
+├────── entities
+├────── inbound (ports)
+├────── outbound (ports)
+├────── services
+├── infrastructure 
+├───── inbound (adapters)
+├──────── rest
+├──────── queues
+├──────── batches
+├──────── cli
+├──────── ...
+├───── outbound (adapters)
+├──────── database 
+├──────── queues
+├──────── bucket
+├──────── ...
+└── 
+```
+
 ## Use case : Blogger 
 
 ### Unit testing with in stubs (in memory adapter)
