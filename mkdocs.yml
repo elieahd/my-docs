@@ -75,3 +75,12 @@ nav:
       - Applying the ADM: architecture/togaf/foundation/unit5.md
       - Architecture Governance: architecture/togaf/foundation/unit6.md
       - Architecture Content: architecture/togaf/foundation/unit7.md
+    - Practitioner:
+      - Context for Enterprise Architecture: architecture/togaf/practitioner/unit1.md
+      - Stakeholder Management: architecture/togaf/practitioner/unit2.md
+      - Phase A, the Starting Point: architecture/togaf/practitioner/unit3.md
+      - Architecture Development: architecture/togaf/practitioner/unit4.md
+      - Implementing the Architecture: architecture/togaf/practitioner/unit5.md
+      - Architecture Change Management: architecture/togaf/practitioner/unit6.md
+      - Requirements Management: architecture/togaf/practitioner/unit7.md
+      - Supporting the ADM Work: architecture/togaf/practitioner/unit8.md
