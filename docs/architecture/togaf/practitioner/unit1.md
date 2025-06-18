@@ -11,3 +11,10 @@ Agile development aligns with ADM Phase G, Implementation Governance
 Architecture will have a set of constraints that limit the choices of the Agile team — often termed as guardrails
 
 The Practitioner needs to act as the stakeholder’s agent.
+
+An Enterprise Security Architecture does not exist in isolation.
+
+Risk is the effect that uncertainty has on the achievement of business objectives.
+
+The objective of risk management is to optimize business outcomes to maximize business value and minimize business losses.
+
