@@ -76,7 +76,6 @@ In the traditional architecture we would found ourself with the current structur
 └── 
 ```
 
-check current branch : [`traditional`](todo) 
 
 To apply the hexagonal architecture to current use case, we would end up with the following structure 
 
@@ -106,8 +105,6 @@ To apply the hexagonal architecture to current use case, we would end up with th
 ├────────────── PostDatabaseInventory
 └── 
 ```
-
-check hexagonal branch : [`hexagonal`](todo) 
 
 ### Unit testing with in stubs (in memory adapter)
 
