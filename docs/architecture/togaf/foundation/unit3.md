@@ -51,6 +51,7 @@ Development of the target Information Systems Architectures, describing how the 
 Development of the Target Data Architecture that enables the Business Architecture and the Architecture Vision, in a way that addresses the Statement of Architecture Work and stakeholder concerns
 
 Divided into two domain:
+
 * Data Architecture: Define data entities, relationships, data governance
 * Application Architecture: Identify applications, their interactions, and alignment with business needs
 
