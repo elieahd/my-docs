@@ -76,7 +76,6 @@ In the traditional architecture we would found ourself with the current structur
 └── 
 ```
 
-
 To apply the hexagonal architecture to current use case, we would end up with the following structure 
 
 ```
@@ -103,6 +102,7 @@ To apply the hexagonal architecture to current use case, we would end up with th
 ├────────── database
 ├────────────── CategoryDatabaseInventory
 ├────────────── PostDatabaseInventory
+├────── BloggerApplication
 └── 
 ```
 
@@ -259,3 +259,10 @@ class DomainArchTest {
 
 }
 ```
+
+
+## Resources 
+- Traditional layer code : [`blogger-hexagonal/traditional`](https://github.com/elieahd/blogger-hexagonal/tree/traditional)
+- Hexagonal layer code : [`blogger-hexagonal/hexagonal`](https://github.com/elieahd/blogger-hexagonal/tree/hexagonal)
+- Article : [Transforming a Traditional Spring Boot App into a Hexagonal Architecture](https://medium.com/@eliedhr/transforming-a-traditional-spring-boot-app-into-a-hexagonal-architecture-0040b85add57)
+
