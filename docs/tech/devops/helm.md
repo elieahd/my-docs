@@ -15,9 +15,9 @@ Structure of a chart:
 
 #### Getting started
 
-1. Install `HELM` cli
+##### 1. Install `HELM` cli
 
-2. Setup `HELM` charts in a project with the command `helm create`
+##### 2. Setup `HELM` charts in a project with the command `helm create`
 
 This command creates a chart directory along with the common files and directories used in a chart.
 
@@ -39,7 +39,7 @@ devops/helm
     └── tests/     # The test files
 ```
 
-3. Setup your templates
+##### 3. Setup your templates
 
 Define your `Kubernetes` manifests in the `HELM` chart that you have just created.
 
@@ -105,7 +105,7 @@ spec:
         {{- end }}
 ```
 
-4. Configuration via `values.yaml`
+##### 4. Configuration via `values.yaml`
 
 The `values.yaml` file allows you to centralize and override configurations without editing your template files directly.
 
@@ -149,7 +149,7 @@ filebeat:
   enabled: true
 ```
 
-5. Deployment
+##### 5. Deployment
 
 Traditionally you would have used `kubectl` to deploy to a `Kubernetes` cluster, by using the command `kubectl apply`
 
