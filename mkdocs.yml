@@ -57,7 +57,8 @@ nav:
     - Debugging a Java Stream in IntelliJ: tech/backend/java-stream-intellij.md 
     - Arch Unit: tech/backend/arch-unit.md
   - Devops: 
-    - My most used K8S commands: tech/devops/kubectl.md
+    - My most used K8S commands: tech/devops/kubectl.md 
+    - HELM: tech/devops/helm.md
   - Shell:
     - Text editing with sed: tech/shell/sed.md
     - Text searching with grep: tech/shell/grep.md
