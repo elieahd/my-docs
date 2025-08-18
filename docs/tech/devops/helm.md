@@ -120,11 +120,11 @@ replicas: 1
 
 resources:
   limits:
-    cpu:
-    memory:
+    cpu: 200m
+    memory: 200Mi
   requests:
-    cpu:
-    memory:
+    cpu: 50m
+    memory: 200Mi
 
 filebeat:
   enabled: false
@@ -139,11 +139,11 @@ replicas: 2
 
 resources:
   limits:
-    cpu:
-    memory:
+    cpu: 500m
+    memory: 500Mi
   requests:
-    cpu:
-    memory:
+    cpu: 200m
+    memory: 500Mi
 
 filebeat:
   enabled: true
