@@ -128,7 +128,7 @@ void main() {
 }
 ```
 
-No need for public class, public static void main, etc. → easier for small programs, teaching, scripting.
+No need for `public class`, `public static void main`, etc. → easier for small programs, teaching, scripting.
 
 ## Module import
 
@@ -159,7 +159,7 @@ void main() {
 }
 ```
 
-Instead of importing every class or package, you can pull in the whole module (java.util in this case).
+Instead of importing every class or package, you can pull in the whole module (`java.util` in this case).
 
 Cleaner for quick apps and educational snippets.
 
@@ -204,8 +204,6 @@ public class Example {
     }
 }
 ```
-
-Benefits:
 
 - No risk of accidental value leakage across threads.
 - Automatically bound to the structured scope.
