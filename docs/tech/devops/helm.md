@@ -130,7 +130,7 @@ filebeat:
   enabled: false
 ```
 
-- `PROD` environment values : `/audit/devops/homol/values.yaml`
+- `PROD` environment values : `/audit/devops/prod/values.yaml`
 
 ```yaml
 app: audit
