@@ -4,7 +4,7 @@ Here are some features
 
 ## Flexible Constructor Bodies
 
-Allows code before the super(...) or this(...) call in constructors.
+Allows code before the `super(...)` or `this(...)` call in constructors.
 
 Enables validation or computations before delegation to the superclass constructor.
 
@@ -58,9 +58,9 @@ if (o instanceof Integer i) {   // autoboxed to Integer
 }
 ```
 
-You could not write if (o instanceof int i).
+You could not write `if (o instanceof int i)`
 
-The only option was to rely on wrapper classes (Integer, Double, etc.), because instanceof only worked with reference types.
+The only option was to rely on wrapper classes (`Integer`, `Double`, etc.), because `instanceof` only worked with reference types.
 
 #### After
 
@@ -79,9 +79,9 @@ if (o instanceof int i) {   // primitive pattern
 
 #### Before
 
-If you had a primitive like `int x = 42;`, and passed it as Object o = x;, then autoboxing turned it into an Integer, and the pattern case Integer i matched.
+If you had a primitive like `int x = 42;`, and passed it as `Object o = x;`, then autoboxing turned it into an Integer, and the pattern `case Integer i` matched.
 
-You could not directly write case int i or use primitive patterns in switch.
+You could not directly write `case int i` or use primitive patterns in `switch`.
 
 ```java
 public String test(Object obj) {
