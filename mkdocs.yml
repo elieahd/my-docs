@@ -60,6 +60,8 @@ nav:
   - Devops: 
     - My most used K8S commands: tech/devops/kubectl.md 
     - HELM: tech/devops/helm.md
+    - GitHub CLI: tech/devops/gh-cli.md
+    - Twelve-Factor app: tech/devops/twelve-factor-app.md
   - Shell:
     - Text editing with sed: tech/shell/sed.md
     - Text searching with grep: tech/shell/grep.md
