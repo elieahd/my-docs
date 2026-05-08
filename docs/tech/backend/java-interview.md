@@ -8,7 +8,7 @@
 
 - Java compiles your code into **bytecode**, not machine code
 - Bytecode runs on any machine that has a JVM installed
-- So you write it once, it runs on Windows, Mac, Linux — no changes needed
+- So you write it once, it runs on Windows, Mac, Linux, no changes needed
 - That's the famous "Write Once, Run Anywhere" idea
 
 ---
@@ -17,7 +17,7 @@
 
 - You organize your code around **objects** instead of functions
 - An object has data (fields) and things it can do (methods)
-- Think of a `Car` — it has a brand, a speed, and can accelerate
+- Think of a `Car`, it has a brand, a speed, and can accelerate
 - OOP has 4 pillars: **encapsulation, inheritance, polymorphism, abstraction**
 
 ```java
@@ -41,7 +41,7 @@ class Dog extends Animal {
 **3. What are the main features of Java?**
 
 - Platform independent (thanks to the JVM)
-- Strongly typed — the compiler catches type errors early
+- Strongly typed, the compiler catches type errors early
 - Automatic memory management via garbage collection
 - Built-in multithreading support
 - Rich standard library out of the box
@@ -61,16 +61,16 @@ class Dog extends Animal {
 
 **5. What's the difference between JDK, JRE and JVM?**
 
-- **JVM** — runs the bytecode, that's it
-- **JRE** — JVM + the standard Java libraries (enough to run a program)
-- **JDK** — JRE + compiler + debugger + dev tools (what you need to build programs)
+- **JVM**, runs the bytecode, that's it
+- **JRE**, JVM + the standard Java libraries (enough to run a program)
+- **JDK**, JRE + compiler + debugger + dev tools (what you need to build programs)
 - Rule of thumb: users need JRE, developers need JDK
 
 ---
 
 **6. Explain the Java garbage collection process.**
 
-- Java handles memory for you — you don't free objects manually
+- Java handles memory for you, you don't free objects manually
 - When an object has no more references, it becomes eligible for GC
 - The heap is split into generations: Eden → Survivor → Old Gen
 - Objects get promoted as they survive more GC cycles
@@ -87,7 +87,7 @@ System.gc();
 
 **7. What is a class in Java?**
 
-- A class is a blueprint — it defines what an object looks like and what it can do
+- A class is a blueprint, it defines what an object looks like and what it can do
 - No memory is used until you actually create an object from it
 
 ```java
@@ -110,10 +110,8 @@ class Car {
 
 ```java
 Car myCar = new Car();
-myCar.brand ="Tesla";
-        myCar.
-
-accelerate();
+myCar.brand = "Tesla";
+myCar.accelerate();
 ```
 
 ---
@@ -186,10 +184,8 @@ class BankAccount {
 ```java
 String a = new String("hi");
 String b = new String("hi");
-a ==b       // false — two different objects
-a.
-
-equals(b)  // true  — same characters
+a ==b       // false, two different objects
+a.equals(b)  // true , same characters
 ```
 
 ---
@@ -206,9 +202,7 @@ class MathUtils {
         return n * n;
     }
 }
-MathUtils.
-
-square(5); // no object needed
+MathUtils.square(5); // no object needed
 ```
 
 ---
@@ -216,7 +210,7 @@ square(5); // no object needed
 **14. What is a constructor and how is it different from a method?**
 
 - A constructor runs automatically when you create an object with `new`
-- It has no return type — not even `void`
+- It has no return type, not even `void`
 - A method is called manually and does work on an existing object
 
 ```java
@@ -258,7 +252,7 @@ double add(double a, double b) {
 
 - A subclass rewrites a method from its parent with the same signature
 - Java calls the subclass version at runtime
-- Always use `@Override` — the compiler will catch typos
+- Always use `@Override`, the compiler will catch typos
 
 ```java
 class Shape {
@@ -281,18 +275,17 @@ class Circle extends Shape {
 
 **17. What is the difference between final, finally and finalize?**
 
-- `final` — locks something down (variable can't change, method can't be overridden, class can't be extended)
-- `finally` — the block that always runs after a try/catch, great for cleanup
-- `finalize()` — old GC hook on Object, deprecated and unreliable, don't use it
+- `final`, locks something down (variable can't change, method can't be overridden, class can't be extended)
+- `finally`, the block that always runs after a try/catch, great for cleanup
+- `finalize()`, old GC hook on Object, deprecated and unreliable, don't use it
 
 ```java
 final int MAX = 100;
-try{
-
-riskyOp(); }
-        finally{connection.
-
-close(); }
+try {
+    riskyOp();
+} finally{
+    connection.close();
+}
 ```
 
 ---
@@ -319,7 +312,7 @@ abstract class Shape {
 
 **19. What is an interface and how is it different from an abstract class?**
 
-- An interface is a pure contract — it just says "implement these methods"
+- An interface is a pure contract, it just says "implement these methods"
 - A class can implement multiple interfaces but extend only one class
 - Since Java 8, interfaces can also have `default` and `static` methods
 
@@ -332,7 +325,8 @@ interface Resizable {
     void resize(double factor);
 }
 
-class Icon implements Drawable, Resizable { ...
+class Icon implements Drawable, Resizable { 
+    ...
 }
 ```
 
@@ -342,15 +336,15 @@ class Icon implements Drawable, Resizable { ...
 
 **20. What is the difference between checked and unchecked exceptions?**
 
-- **Checked** — the compiler forces you to handle or declare them (e.g. `IOException`)
-- **Unchecked** — these are bugs, not expected failures (e.g. `NullPointerException`)
+- **Checked**, the compiler forces you to handle or declare them (e.g. `IOException`)
+- **Unchecked**, these are bugs, not expected failures (e.g. `NullPointerException`)
 - Checked = things that can go wrong in the real world. Unchecked = programmer mistakes
 
 ```java
-// Checked — must be handled
-void read() throws IOException { ...}
+// Checked, must be handled
+void read() throws IOException { ... }
 
-// Unchecked — compiler won't warn you
+// Unchecked, compiler won't warn you
 int[] a = {};
 a[0]; // ArrayIndexOutOfBoundsException at runtime
 ```
@@ -367,14 +361,8 @@ a[0]; // ArrayIndexOutOfBoundsException at runtime
 
 ```java
 ExecutorService pool = Executors.newFixedThreadPool(4);
-pool.
-
-submit(() ->System.out.
-
-println("running in a thread"));
-        pool.
-
-shutdown();
+pool.submit(() ->System.out.println("running in a thread"));
+pool.shutdown();
 ```
 
 ---
@@ -383,7 +371,7 @@ shutdown();
 
 - Without it, a thread might read a stale cached value of a variable
 - `volatile` forces reads/writes to go straight to main memory
-- But it doesn't make compound operations (like `count++`) atomic — use `AtomicInteger` for that
+- But it doesn't make compound operations (like `count++`) atomic, use `AtomicInteger` for that
 
 ```java
 private volatile boolean running = true;
@@ -400,28 +388,25 @@ private volatile boolean running = true;
 
 ```java
 Thread t = new Thread(() -> System.out.println("hello"));
-t.
-
-start();
+t.start();
 ```
 
 ---
 
 **24. What is the difference between synchronized, Lock, and volatile?**
 
-- `synchronized` — simplest way to prevent two threads entering the same block
-- `Lock` (ReentrantLock) — more flexible: supports timeouts, try-lock, interruptible waits
-- `volatile` — only guarantees visibility, not mutual exclusion
+- `synchronized`, simplest way to prevent two threads entering the same block
+- `Lock` (ReentrantLock), more flexible: supports timeouts, try-lock, interruptible waits
+- `volatile`, only guarantees visibility, not mutual exclusion
 
 ```java
 Lock lock = new ReentrantLock();
-lock.
-
-lock();
-try{ /* only one thread here at a time */ }
-        finally{lock.
-
-unlock(); }
+lock.lock();
+try{
+    /* only one thread here at a time */ 
+} finally{
+    lock.unlock();
+}
 ```
 
 ---
@@ -430,11 +415,11 @@ unlock(); }
 
 - Thread A holds lock 1, waits for lock 2
 - Thread B holds lock 2, waits for lock 1
-- Both wait forever — that's a deadlock
+- Both wait forever, that's a deadlock
 - Fix: always acquire locks in the same order, or use `tryLock()` with a timeout
 
 ```java
-// Danger — if two threads run these in opposite order
+// Danger, if two threads run these in opposite order
 synchronized(lockA){synchronized(lockB){...}}
 synchronized(lockB){synchronized(lockA){...}}
 ```
@@ -443,25 +428,23 @@ synchronized(lockB){synchronized(lockA){...}}
 
 **26. What is the difference between wait() and sleep()?**
 
-- `sleep()` just pauses the thread — it keeps all its locks
+- `sleep()` just pauses the thread, it keeps all its locks
 - `wait()` releases the lock and suspends until someone calls `notify()`
 - `wait()` must be inside a `synchronized` block
 
 ```java
-synchronized(lock){lock.
-
-wait(); }  // releases the lock
-        Thread.
-
-sleep(1000);                  // holds the lock, just pauses
+synchronized(lock) {
+    lock.wait();
+}  // releases the lock
+Thread.sleep(1000); // holds the lock, just pauses
 ```
 
 ---
 
 **27. What is the difference between Callable and Runnable?**
 
-- `Runnable` — no return value, can't throw checked exceptions
-- `Callable` — returns a result via `Future`, can throw exceptions
+- `Runnable`, no return value, can't throw checked exceptions
+- `Callable`, returns a result via `Future`, can throw exceptions
 - Use `Callable` whenever you need to get something back from a task
 
 ```java
@@ -480,12 +463,8 @@ int result = f.get(); // waits for the result
 ```java
 ExecutorService pool = Executors.newFixedThreadPool(4);
 Future<String> f = pool.submit(() -> "done");
-System.out.
-
-println(f.get());
-        pool.
-
-shutdown();
+System.out.println(f.get());
+pool.shutdown();
 ```
 
 ---
@@ -513,9 +492,9 @@ void partialLock() {
 
 **30. What is the difference between ArrayList and LinkedList?**
 
-- `ArrayList` — backed by an array. Fast random access, slow inserts in the middle
-- `LinkedList` — backed by nodes. Fast inserts/deletes at the ends, slow random access
-- Honestly, use `ArrayList` by default — it's faster for most real-world use cases
+- `ArrayList`, backed by an array. Fast random access, slow inserts in the middle
+- `LinkedList`, backed by nodes. Fast inserts/deletes at the ends, slow random access
+- Honestly, use `ArrayList` by default, it's faster for most real-world use cases
 
 ```java
 List<String> arr = new ArrayList<>();  // your default choice
@@ -526,7 +505,7 @@ List<String> lnk = new LinkedList<>(); // only if you need queue-like behavior
 
 **31. What is the difference between Array and ArrayList?**
 
-- Arrays are fixed size — you set the length once and that's it
+- Arrays are fixed size, you set the length once and that's it
 - Arrays can hold primitives (`int[]`), ArrayList can't
 - `ArrayList` grows automatically and has helper methods like `add()`, `remove()`
 
@@ -540,7 +519,7 @@ List<Integer> list = new ArrayList<>(); // flexible, objects only
 **32. What is the Java Collections Framework?**
 
 - A set of ready-made data structures you can use out of the box
-- Covers lists, sets, maps, queues — all with consistent interfaces
+- Covers lists, sets, maps, queues, all with consistent interfaces
 - You rarely need to build your own data structure in Java because of this
 
 ```java
@@ -566,8 +545,8 @@ Map<String, Integer> safe = new ConcurrentHashMap<>();  // thread-safe modern ch
 
 **34. What is the difference between HashSet and TreeSet?**
 
-- `HashSet` — no guaranteed order, but O(1) lookups
-- `TreeSet` — always sorted, but O(log n) operations
+- `HashSet`, no guaranteed order, but O(1) lookups
+- `TreeSet`, always sorted, but O(log n) operations
 - Use `TreeSet` when you need the elements in order, otherwise `HashSet` is faster
 
 ```java
@@ -579,21 +558,19 @@ Set<Integer> t = new TreeSet<>(); // sorted, slightly slower
 
 **35. What is the difference between Comparator and Comparable?**
 
-- `Comparable` — the object defines its own natural sort order (`compareTo`)
-- `Comparator` — an external object defines a custom sort order
+- `Comparable`, the object defines its own natural sort order (`compareTo`)
+- `Comparator`, an external object defines a custom sort order
 - Use `Comparator` when you want multiple ways to sort or can't touch the class
 
 ```java
-// Comparable — sort by GPA inside the class
+// Comparable, sort by GPA inside the class
 class Student implements Comparable<Student> {
     public int compareTo(Student o) {
         return this.gpa - o.gpa;
     }
 }
-// Comparator — sort by name from outside
-list.
-
-sort(Comparator.comparing(Student::getName));
+// Comparator, sort by name from outside
+list.sort(Comparator.comparing(Student::getName));
 ```
 
 ---
@@ -602,19 +579,14 @@ sort(Comparator.comparing(Student::getName));
 
 **36. What is the difference between String, StringBuilder, and StringBuffer?**
 
-- `String` — immutable, every change creates a new object
-- `StringBuilder` — mutable and fast, not thread-safe
-- `StringBuffer` — mutable and thread-safe, but slower
+- `String`, immutable, every change creates a new object
+- `StringBuilder`, mutable and fast, not thread-safe
+- `StringBuffer`, mutable and thread-safe, but slower
 - In a loop building a string? Always use `StringBuilder`
 
 ```java
 StringBuilder sb = new StringBuilder();
-sb.
-
-append("Hello").
-
-append(" World");
-
+sb.append("Hello").append(" World");
 String result = sb.toString();
 ```
 
@@ -626,7 +598,7 @@ String result = sb.toString();
 
 - Ensures only one instance of a class ever exists
 - Useful for things like config managers or connection pools
-- The tricky part is making it thread-safe — use `volatile` + double-checked locking
+- The tricky part is making it thread-safe, use `volatile` + double-checked locking
 
 ```java
 class Singleton {
@@ -653,7 +625,7 @@ class Singleton {
 
 - Lets you inspect and call classes, methods, and fields at runtime
 - Used heavily in frameworks (Spring, Hibernate) under the hood
-- It's powerful but slow and breaks encapsulation — don't abuse it
+- It's powerful but slow and breaks encapsulation, don't abuse it
 
 ```java
 Class<?> c = Class.forName("java.util.ArrayList");
@@ -665,7 +637,7 @@ Object result = m.invoke(new ArrayList<>());
 
 **39. What is the Java Stream API and why is it useful?**
 
-- A cleaner way to work with collections — no more verbose for-loops
+- A cleaner way to work with collections, no more verbose for-loops
 - You chain operations: filter, map, reduce, collect
 - Can switch to parallel processing with one word: `parallelStream()`
 
@@ -698,19 +670,17 @@ class SumTask extends RecursiveTask<Long> {
 
 **41. What is the difference between deep copy and shallow copy?**
 
-- **Shallow copy** — copies the object but nested objects are still shared
-- **Deep copy** — copies everything, all the way down
+- **Shallow copy**, copies the object but nested objects are still shared
+- **Deep copy**, copies everything, all the way down
 - If you change a nested object in a shallow copy, the original is affected too
 
 ```java
-// Shallow — fast but shares references
+// Shallow, fast but shares references
 Object clone = original.clone();
 
-// Deep — via serialization (truly independent copy)
+// Deep, via serialization (truly independent copy)
 ObjectOutputStream oos = new ObjectOutputStream(bos);
-oos.
-
-writeObject(original);
+oos.writeObject(original);
 ```
 
 ---
@@ -735,7 +705,7 @@ void callExternalService() { ...}
 **43. What are Generics in Java?**
 
 - Let you write classes and methods that work with any type, safely
-- The compiler catches type mismatches — no more random `ClassCastException` at runtime
+- The compiler catches type mismatches, no more random `ClassCastException` at runtime
 - The type info is erased at runtime (type erasure), but that's a JVM detail you rarely care about
 
 ```java
@@ -756,19 +726,5 @@ Box<String> box = new Box<>(); // compiler enforces String only
 
 ```java
 Optional<String> name = findUser(id).map(User::getName);
-name.
-
-ifPresentOrElse(
-        n  ->System.out.
-
-println("Hello "+n),
-  ()->System.out.
-
-println("User not found")
-);
+name.ifPresentOrElse(n  ->System.out.println("Hello "+n), ()->System.out.println("User not found"));
 ```
-
----
-
-*46 questions — Basics · JVM/JDK · OOP · Core Concepts · Abstraction · Exceptions · Concurrency · Collections ·
-Strings · Design Patterns · Advanced Java*
