@@ -57,6 +57,7 @@ nav:
     - Debugging a Java Stream in IntelliJ: tech/backend/java-stream-intellij.md 
     - Arch Unit: tech/backend/arch-unit.md
     - Java 25: tech/backend/java-25.md
+    - Java Basic Interview Questions: tech/backend/java-interview.md
   - Devops: 
     - My most used K8S commands: tech/devops/kubectl.md 
     - HELM: tech/devops/helm.md
