@@ -1,0 +1,2789 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Elie Daher">
+      
+      
+        <link rel="canonical" href="https://elieahd.github.io/my-docs/tech/backend/java-interview-questions/">
+      
+      
+        <link rel="prev" href="../java-interview-data-structure/">
+      
+      
+        <link rel="next" href="../../devops/kubectl/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Java Basic Interview Questions - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#java-interview-questions-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Java Basic Interview Questions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/elieahd/my-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    elieahd/my-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../api-guidelines/" class="md-tabs__link">
+          
+  
+  
+  Tech
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../architecture/hexagonal/" class="md-tabs__link">
+          
+  
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/elieahd/my-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    elieahd/my-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backend
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Backend
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aaa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structure unit tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java-stream-intellij/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debugging a Java Stream in IntelliJ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arch-unit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arch Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java-interview-data-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java Interview Data Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java Basic Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java Basic Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jvm-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JVM / JDK
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OOP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstraction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exceptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collections
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Devops
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Devops
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/kubectl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My most used K8S commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/helm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HELM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/gh-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/twelve-factor-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Twelve-Factor app
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Shell
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shell/sed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text editing with sed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shell/grep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text searching with grep
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shell/awk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text processing with awk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shell/curl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Making HTTP requests with curl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shell/jq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSON processing with jq
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech-debt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech debt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/hexagonal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hexagonal Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TOGAF
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TOGAF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Foundation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction and Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADM Phases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADM Techniques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applying the ADM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/foundation/unit7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practitioner
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Practitioner
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Context for Enterprise Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stakeholder Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase A, the Starting Point
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementing the Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Change Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requirements Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/togaf/practitioner/unit8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supporting the ADM Work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jvm-jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JVM / JDK
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OOP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstraction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exceptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collections
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Java
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="java-interview-questions-answers">Java Interview Questions &amp; Answers</h1>
+<hr />
+<h2 id="basics">Basics</h2>
+<p><strong>1. What is Java and why is it platform independent?</strong></p>
+<ul>
+<li>Java compiles your code into <strong>bytecode</strong>, not machine code</li>
+<li>Bytecode runs on any machine that has a JVM installed</li>
+<li>So you write it once, it runs on Windows, Mac, Linux, no changes needed</li>
+<li>That's the famous "Write Once, Run Anywhere" idea</li>
+</ul>
+<hr />
+<p><strong>2. Explain the concept of object-oriented programming.</strong></p>
+<ul>
+<li>You organize your code around <strong>objects</strong> instead of functions</li>
+<li>An object has data (fields) and things it can do (methods)</li>
+<li>Think of a <code>Car</code>, it has a brand, a speed, and can accelerate</li>
+<li>OOP has 4 pillars: <strong>encapsulation, inheritance, polymorphism, abstraction</strong></li>
+</ul>
+<pre><code class="language-java">class Animal {
+    String name;
+
+    void speak() {
+        System.out.println(&quot;...&quot;);
+    }
+}
+
+class Dog extends Animal {
+    void speak() {
+        System.out.println(&quot;Woof!&quot;);
+    }
+}
+</code></pre>
+<hr />
+<p><strong>3. What are the main features of Java?</strong></p>
+<ul>
+<li>Platform independent (thanks to the JVM)</li>
+<li>Strongly typed, the compiler catches type errors early</li>
+<li>Automatic memory management via garbage collection</li>
+<li>Built-in multithreading support</li>
+<li>Rich standard library out of the box</li>
+<li>Security features baked right into the runtime</li>
+</ul>
+<hr />
+<h2 id="jvm-jdk">JVM / JDK</h2>
+<p><strong>4. What is the Java Virtual Machine (JVM)?</strong></p>
+<ul>
+<li>It's the engine that actually runs your Java code</li>
+<li>It takes the bytecode and executes it on your machine</li>
+<li>It also manages memory, runs the garbage collector, and JIT-compiles hot code to native instructions</li>
+</ul>
+<hr />
+<p><strong>5. What's the difference between JDK, JRE and JVM?</strong></p>
+<ul>
+<li><strong>JVM</strong>, runs the bytecode, that's it</li>
+<li><strong>JRE</strong>, JVM + the standard Java libraries (enough to run a program)</li>
+<li><strong>JDK</strong>, JRE + compiler + debugger + dev tools (what you need to build programs)</li>
+<li>Rule of thumb: users need JRE, developers need JDK</li>
+</ul>
+<hr />
+<p><strong>6. Explain the Java garbage collection process.</strong></p>
+<ul>
+<li>Java handles memory for you, you don't free objects manually</li>
+<li>When an object has no more references, it becomes eligible for GC</li>
+<li>The heap is split into generations: Eden → Survivor → Old Gen</li>
+<li>Objects get promoted as they survive more GC cycles</li>
+<li>Modern collectors like G1 and ZGC minimize pause times</li>
+</ul>
+<pre><code class="language-java">// You can hint at it, but never force it
+System.gc();
+</code></pre>
+<hr />
+<h2 id="oop">OOP</h2>
+<p><strong>7. What is a class in Java?</strong></p>
+<ul>
+<li>A class is a blueprint, it defines what an object looks like and what it can do</li>
+<li>No memory is used until you actually create an object from it</li>
+</ul>
+<pre><code class="language-java">class Car {
+    String brand;
+    int speed;
+
+    void accelerate() {
+        speed += 10;
+    }
+}
+</code></pre>
+<hr />
+<p><strong>8. What is an object in Java?</strong></p>
+<ul>
+<li>An object is a live instance of a class</li>
+<li>It lives on the heap and has its own copy of the class's fields</li>
+</ul>
+<pre><code class="language-java">Car myCar = new Car();
+myCar.brand = &quot;Tesla&quot;;
+myCar.accelerate();
+</code></pre>
+<hr />
+<p><strong>9. What is inheritance in Java?</strong></p>
+<ul>
+<li>A child class can inherit fields and methods from a parent class</li>
+<li>You use the <code>extends</code> keyword</li>
+<li>It avoids copy-pasting code and models "is-a" relationships naturally</li>
+</ul>
+<pre><code class="language-java">class Vehicle {
+    int speed;
+}
+
+class Car extends Vehicle {
+    String brand;
+}
+// Car gets speed for free from Vehicle
+</code></pre>
+<hr />
+<p><strong>10. What is polymorphism in Java?</strong></p>
+<ul>
+<li>One reference type, many possible behaviors</li>
+<li>At runtime, Java calls the right method based on the actual object</li>
+<li>Compile-time version = method overloading</li>
+<li>Runtime version = method overriding</li>
+</ul>
+<pre><code class="language-java">Animal a = new Dog();
+a.
+
+speak(); // calls Dog's speak(), not Animal's
+</code></pre>
+<hr />
+<p><strong>11. What is encapsulation in Java?</strong></p>
+<ul>
+<li>Hide your internal data and only expose what you need to</li>
+<li>Use <code>private</code> fields, then control access with getters and setters</li>
+<li>Protects your object from being put in a bad state</li>
+</ul>
+<pre><code class="language-java">class BankAccount {
+    private double balance;
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amt) {
+        balance += amt;
+    }
+}
+</code></pre>
+<hr />
+<h2 id="core-concepts">Core Concepts</h2>
+<p><strong>12. What is the difference between == and equals() in Java?</strong></p>
+<ul>
+<li><code>==</code> checks if two variables point to the <strong>same object</strong> in memory</li>
+<li><code>equals()</code> checks if two objects have the <strong>same content</strong></li>
+<li>For strings, almost always use <code>equals()</code></li>
+</ul>
+<pre><code class="language-java">String a = new String(&quot;hi&quot;);
+String b = new String(&quot;hi&quot;);
+a ==b       // false, two different objects
+a.equals(b)  // true , same characters
+</code></pre>
+<hr />
+<p><strong>13. What is the static keyword in Java?</strong></p>
+<ul>
+<li><code>static</code> means it belongs to the <strong>class</strong>, not to any specific object</li>
+<li>A static field is shared by all instances</li>
+<li>A static method can be called without creating an object</li>
+</ul>
+<pre><code class="language-java">class MathUtils {
+    static int square(int n) {
+        return n * n;
+    }
+}
+MathUtils.square(5); // no object needed
+</code></pre>
+<hr />
+<p><strong>14. What is a constructor and how is it different from a method?</strong></p>
+<ul>
+<li>A constructor runs automatically when you create an object with <code>new</code></li>
+<li>It has no return type, not even <code>void</code></li>
+<li>A method is called manually and does work on an existing object</li>
+</ul>
+<pre><code class="language-java">class Point {
+    int x, y;
+
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    } // constructor
+
+    double distance() {
+        return Math.sqrt(x * x + y * y);
+    } // method
+}
+</code></pre>
+<hr />
+<p><strong>15. What is method overloading in Java?</strong></p>
+<ul>
+<li>Same method name, different parameter list</li>
+<li>The compiler picks the right one at compile time</li>
+<li>Useful when you want the same operation to handle different input types</li>
+</ul>
+<pre><code class="language-java">int add(int a, int b) {
+    return a + b;
+}
+
+double add(double a, double b) {
+    return a + b;
+}
+</code></pre>
+<hr />
+<p><strong>16. What is method overriding in Java?</strong></p>
+<ul>
+<li>A subclass rewrites a method from its parent with the same signature</li>
+<li>Java calls the subclass version at runtime</li>
+<li>Always use <code>@Override</code>, the compiler will catch typos</li>
+</ul>
+<pre><code class="language-java">class Shape {
+    double area() {
+        return 0;
+    }
+}
+
+class Circle extends Shape {
+    double r;
+
+    @Override
+    double area() {
+        return Math.PI * r * r;
+    }
+}
+</code></pre>
+<hr />
+<p><strong>17. What is the difference between final, finally and finalize?</strong></p>
+<ul>
+<li><code>final</code>, locks something down (variable can't change, method can't be overridden, class can't be extended)</li>
+<li><code>finally</code>, the block that always runs after a try/catch, great for cleanup</li>
+<li><code>finalize()</code>, old GC hook on Object, deprecated and unreliable, don't use it</li>
+</ul>
+<pre><code class="language-java">final int MAX = 100;
+try {
+    riskyOp();
+} finally{
+    connection.close();
+}
+</code></pre>
+<hr />
+<h2 id="abstraction">Abstraction</h2>
+<p><strong>18. What is an abstract class in Java?</strong></p>
+<ul>
+<li>A class you can't instantiate directly</li>
+<li>It can have both abstract methods (no body) and normal methods</li>
+<li>Use it when subclasses share some logic but must implement their own version of certain methods</li>
+</ul>
+<pre><code class="language-java">abstract class Shape {
+    abstract double area();                          // subclass must implement
+
+    void print() {
+        System.out.println(area());
+    }    // shared logic
+}
+</code></pre>
+<hr />
+<p><strong>19. What is an interface and how is it different from an abstract class?</strong></p>
+<ul>
+<li>An interface is a pure contract, it just says "implement these methods"</li>
+<li>A class can implement multiple interfaces but extend only one class</li>
+<li>Since Java 8, interfaces can also have <code>default</code> and <code>static</code> methods</li>
+</ul>
+<pre><code class="language-java">interface Drawable {
+    void draw();
+}
+
+interface Resizable {
+    void resize(double factor);
+}
+
+class Icon implements Drawable, Resizable { 
+    ...
+}
+</code></pre>
+<hr />
+<h2 id="exceptions">Exceptions</h2>
+<p><strong>20. What is the difference between checked and unchecked exceptions?</strong></p>
+<ul>
+<li><strong>Checked</strong>, the compiler forces you to handle or declare them (e.g. <code>IOException</code>)</li>
+<li><strong>Unchecked</strong>, these are bugs, not expected failures (e.g. <code>NullPointerException</code>)</li>
+<li>Checked = things that can go wrong in the real world. Unchecked = programmer mistakes</li>
+</ul>
+<pre><code class="language-java">// Checked, must be handled
+void read() throws IOException { ... }
+
+// Unchecked, compiler won't warn you
+int[] a = {};
+a[0]; // ArrayIndexOutOfBoundsException at runtime
+</code></pre>
+<hr />
+<h2 id="concurrency">Concurrency</h2>
+<p><strong>21. What is multithreading and how is it implemented?</strong></p>
+<ul>
+<li>Running multiple tasks at the same time within the same program</li>
+<li>All threads share the same heap but have their own stack</li>
+<li>Best practice: don't manage threads manually, use an <code>ExecutorService</code></li>
+</ul>
+<pre><code class="language-java">ExecutorService pool = Executors.newFixedThreadPool(4);
+pool.submit(() -&gt;System.out.println(&quot;running in a thread&quot;));
+pool.shutdown();
+</code></pre>
+<hr />
+<p><strong>22. What is the purpose of the volatile keyword?</strong></p>
+<ul>
+<li>Without it, a thread might read a stale cached value of a variable</li>
+<li><code>volatile</code> forces reads/writes to go straight to main memory</li>
+<li>But it doesn't make compound operations (like <code>count++</code>) atomic, use <code>AtomicInteger</code> for that</li>
+</ul>
+<pre><code class="language-java">private volatile boolean running = true;
+// all threads will see the latest value
+</code></pre>
+<hr />
+<p><strong>23. What is a Thread and how is it different from a Process?</strong></p>
+<ul>
+<li>A <strong>process</strong> is an isolated program with its own memory</li>
+<li>A <strong>thread</strong> lives inside a process and shares the heap with other threads</li>
+<li>Threads are lighter and faster to create than processes</li>
+</ul>
+<pre><code class="language-java">Thread t = new Thread(() -&gt; System.out.println(&quot;hello&quot;));
+t.start();
+</code></pre>
+<hr />
+<p><strong>24. What is the difference between synchronized, Lock, and volatile?</strong></p>
+<ul>
+<li><code>synchronized</code>, simplest way to prevent two threads entering the same block</li>
+<li><code>Lock</code> (ReentrantLock), more flexible: supports timeouts, try-lock, interruptible waits</li>
+<li><code>volatile</code>, only guarantees visibility, not mutual exclusion</li>
+</ul>
+<pre><code class="language-java">Lock lock = new ReentrantLock();
+lock.lock();
+try{
+    /* only one thread here at a time */ 
+} finally{
+    lock.unlock();
+}
+</code></pre>
+<hr />
+<p><strong>25. What is a deadlock in Java?</strong></p>
+<ul>
+<li>Thread A holds lock 1, waits for lock 2</li>
+<li>Thread B holds lock 2, waits for lock 1</li>
+<li>Both wait forever, that's a deadlock</li>
+<li>Fix: always acquire locks in the same order, or use <code>tryLock()</code> with a timeout</li>
+</ul>
+<pre><code class="language-java">// Danger, if two threads run these in opposite order
+synchronized(lockA){synchronized(lockB){...}}
+synchronized(lockB){synchronized(lockA){...}}
+</code></pre>
+<hr />
+<p><strong>26. What is the difference between wait() and sleep()?</strong></p>
+<ul>
+<li><code>sleep()</code> just pauses the thread, it keeps all its locks</li>
+<li><code>wait()</code> releases the lock and suspends until someone calls <code>notify()</code></li>
+<li><code>wait()</code> must be inside a <code>synchronized</code> block</li>
+</ul>
+<pre><code class="language-java">synchronized(lock) {
+    lock.wait();
+}  // releases the lock
+Thread.sleep(1000); // holds the lock, just pauses
+</code></pre>
+<hr />
+<p><strong>27. What is the difference between Callable and Runnable?</strong></p>
+<ul>
+<li><code>Runnable</code>, no return value, can't throw checked exceptions</li>
+<li><code>Callable</code>, returns a result via <code>Future</code>, can throw exceptions</li>
+<li>Use <code>Callable</code> whenever you need to get something back from a task</li>
+</ul>
+<pre><code class="language-java">Future&lt;Integer&gt; f = executor.submit(() -&gt; 42);
+int result = f.get(); // waits for the result
+</code></pre>
+<hr />
+<p><strong>28. What is the Executor Framework?</strong></p>
+<ul>
+<li>A cleaner way to run tasks without manually managing threads</li>
+<li>You submit tasks, the framework handles the thread pool</li>
+<li>Gives you <code>Future</code> objects to track results</li>
+</ul>
+<pre><code class="language-java">ExecutorService pool = Executors.newFixedThreadPool(4);
+Future&lt;String&gt; f = pool.submit(() -&gt; &quot;done&quot;);
+System.out.println(f.get());
+pool.shutdown();
+</code></pre>
+<hr />
+<p><strong>29. What is the difference between synchronized methods and synchronized blocks?</strong></p>
+<ul>
+<li>A synchronized <strong>method</strong> locks the whole object for the duration of the call</li>
+<li>A synchronized <strong>block</strong> lets you lock only a specific resource for a smaller window</li>
+<li>Blocks give you finer control and reduce contention</li>
+</ul>
+<pre><code class="language-java">synchronized void fullLock() { ...}
+
+void partialLock() {
+    doUnsafeWork();
+    synchronized (this.cache) {
+        updateCache();
+    } // only this part is locked
+}
+</code></pre>
+<hr />
+<h2 id="collections">Collections</h2>
+<p><strong>30. What is the difference between ArrayList and LinkedList?</strong></p>
+<ul>
+<li><code>ArrayList</code>, backed by an array. Fast random access, slow inserts in the middle</li>
+<li><code>LinkedList</code>, backed by nodes. Fast inserts/deletes at the ends, slow random access</li>
+<li>Honestly, use <code>ArrayList</code> by default, it's faster for most real-world use cases</li>
+</ul>
+<pre><code class="language-java">List&lt;String&gt; arr = new ArrayList&lt;&gt;();  // your default choice
+List&lt;String&gt; lnk = new LinkedList&lt;&gt;(); // only if you need queue-like behavior
+</code></pre>
+<hr />
+<p><strong>31. What is the difference between Array and ArrayList?</strong></p>
+<ul>
+<li>Arrays are fixed size, you set the length once and that's it</li>
+<li>Arrays can hold primitives (<code>int[]</code>), ArrayList can't</li>
+<li><code>ArrayList</code> grows automatically and has helper methods like <code>add()</code>, <code>remove()</code></li>
+</ul>
+<pre><code class="language-java">int[] arr = new int[5];                 // fixed, primitives OK
+List&lt;Integer&gt; list = new ArrayList&lt;&gt;(); // flexible, objects only
+</code></pre>
+<hr />
+<p><strong>32. What is the Java Collections Framework?</strong></p>
+<ul>
+<li>A set of ready-made data structures you can use out of the box</li>
+<li>Covers lists, sets, maps, queues, all with consistent interfaces</li>
+<li>You rarely need to build your own data structure in Java because of this</li>
+</ul>
+<pre><code class="language-java">List&lt;String&gt; list = new ArrayList&lt;&gt;();
+Set&lt;String&gt; set = new HashSet&lt;&gt;();
+Map&lt;String, Integer&gt; map = new TreeMap&lt;&gt;();
+</code></pre>
+<hr />
+<p><strong>33. What is the difference between HashMap and Hashtable?</strong></p>
+<ul>
+<li><code>HashMap</code> is faster, not thread-safe, and allows one <code>null</code> key</li>
+<li><code>Hashtable</code> is synchronized and doesn't allow <code>null</code> keys at all</li>
+<li>In modern code, use <code>ConcurrentHashMap</code> if you need thread safety</li>
+</ul>
+<pre><code class="language-java">Map&lt;String, Integer&gt; map = new HashMap&lt;&gt;();            // fast, not thread-safe
+Map&lt;String, Integer&gt; safe = new ConcurrentHashMap&lt;&gt;();  // thread-safe modern choice
+</code></pre>
+<hr />
+<p><strong>34. What is the difference between HashSet and TreeSet?</strong></p>
+<ul>
+<li><code>HashSet</code>, no guaranteed order, but O(1) lookups</li>
+<li><code>TreeSet</code>, always sorted, but O(log n) operations</li>
+<li>Use <code>TreeSet</code> when you need the elements in order, otherwise <code>HashSet</code> is faster</li>
+</ul>
+<pre><code class="language-java">Set&lt;Integer&gt; h = new HashSet&lt;&gt;(); // fast, unordered
+Set&lt;Integer&gt; t = new TreeSet&lt;&gt;(); // sorted, slightly slower
+</code></pre>
+<hr />
+<p><strong>35. What is the difference between Comparator and Comparable?</strong></p>
+<ul>
+<li><code>Comparable</code>, the object defines its own natural sort order (<code>compareTo</code>)</li>
+<li><code>Comparator</code>, an external object defines a custom sort order</li>
+<li>Use <code>Comparator</code> when you want multiple ways to sort or can't touch the class</li>
+</ul>
+<pre><code class="language-java">// Comparable, sort by GPA inside the class
+class Student implements Comparable&lt;Student&gt; {
+    public int compareTo(Student o) {
+        return this.gpa - o.gpa;
+    }
+}
+// Comparator, sort by name from outside
+list.sort(Comparator.comparing(Student::getName));
+</code></pre>
+<hr />
+<h2 id="strings">Strings</h2>
+<p><strong>36. What is the difference between String, StringBuilder, and StringBuffer?</strong></p>
+<ul>
+<li><code>String</code>, immutable, every change creates a new object</li>
+<li><code>StringBuilder</code>, mutable and fast, not thread-safe</li>
+<li><code>StringBuffer</code>, mutable and thread-safe, but slower</li>
+<li>In a loop building a string? Always use <code>StringBuilder</code></li>
+</ul>
+<pre><code class="language-java">StringBuilder sb = new StringBuilder();
+sb.append(&quot;Hello&quot;).append(&quot; World&quot;);
+String result = sb.toString();
+</code></pre>
+<hr />
+<h2 id="design-patterns">Design Patterns</h2>
+<p><strong>37. What is the singleton design pattern?</strong></p>
+<ul>
+<li>Ensures only one instance of a class ever exists</li>
+<li>Useful for things like config managers or connection pools</li>
+<li>The tricky part is making it thread-safe, use <code>volatile</code> + double-checked locking</li>
+</ul>
+<pre><code class="language-java">class Singleton {
+    private static volatile Singleton instance;
+
+    private Singleton() {
+    }
+
+    public static Singleton get() {
+        if (instance == null)
+            synchronized (Singleton.class) {
+                if (instance == null) instance = new Singleton();
+            }
+        return instance;
+    }
+}
+</code></pre>
+<hr />
+<h2 id="advanced-java">Advanced Java</h2>
+<p><strong>38. What is reflection in Java?</strong></p>
+<ul>
+<li>Lets you inspect and call classes, methods, and fields at runtime</li>
+<li>Used heavily in frameworks (Spring, Hibernate) under the hood</li>
+<li>It's powerful but slow and breaks encapsulation, don't abuse it</li>
+</ul>
+<pre><code class="language-java">Class&lt;?&gt; c = Class.forName(&quot;java.util.ArrayList&quot;);
+Method m = c.getMethod(&quot;size&quot;);
+Object result = m.invoke(new ArrayList&lt;&gt;());
+</code></pre>
+<hr />
+<p><strong>39. What is the Java Stream API and why is it useful?</strong></p>
+<ul>
+<li>A cleaner way to work with collections, no more verbose for-loops</li>
+<li>You chain operations: filter, map, reduce, collect</li>
+<li>Can switch to parallel processing with one word: <code>parallelStream()</code></li>
+</ul>
+<pre><code class="language-java">List&lt;Integer&gt; evens = numbers.stream()
+        .filter(n -&gt; n % 2 == 0)
+        .collect(Collectors.toList());
+</code></pre>
+<hr />
+<p><strong>40. What is the Fork/Join Framework?</strong></p>
+<ul>
+<li>Built for divide-and-conquer problems</li>
+<li>You split a big task into smaller ones (fork), run them in parallel, then combine the results (join)</li>
+<li>Uses work-stealing under the hood so idle threads pick up tasks from busy ones</li>
+</ul>
+<pre><code class="language-java">class SumTask extends RecursiveTask&lt;Long&gt; {
+    protected Long compute() {
+        if (size &lt;= THRESHOLD) return sequentialSum();
+        SumTask left = new SumTask(...);
+        left.fork();
+        return new SumTask(...).compute() + left.join();
+    }
+}
+</code></pre>
+<hr />
+<p><strong>41. What is the difference between deep copy and shallow copy?</strong></p>
+<ul>
+<li><strong>Shallow copy</strong>, copies the object but nested objects are still shared</li>
+<li><strong>Deep copy</strong>, copies everything, all the way down</li>
+<li>If you change a nested object in a shallow copy, the original is affected too</li>
+</ul>
+<pre><code class="language-java">// Shallow, fast but shares references
+Object clone = original.clone();
+
+// Deep, via serialization (truly independent copy)
+ObjectOutputStream oos = new ObjectOutputStream(bos);
+oos.writeObject(original);
+</code></pre>
+<hr />
+<p><strong>42. What are Java Annotations and how are they used?</strong></p>
+<ul>
+<li>Metadata you attach to classes, methods, or fields with <code>@</code></li>
+<li>Some are processed at compile time (<code>@Override</code>, <code>@SuppressWarnings</code>)</li>
+<li>Others are read at runtime by frameworks via reflection (<code>@Entity</code>, <code>@GetMapping</code>)</li>
+</ul>
+<pre><code class="language-java">@interface Retry {
+    int times() default 3;
+}
+
+@Retry(times = 5)
+void callExternalService() { ...}
+</code></pre>
+<hr />
+<p><strong>43. What are Generics in Java?</strong></p>
+<ul>
+<li>Let you write classes and methods that work with any type, safely</li>
+<li>The compiler catches type mismatches, no more random <code>ClassCastException</code> at runtime</li>
+<li>The type info is erased at runtime (type erasure), but that's a JVM detail you rarely care about</li>
+</ul>
+<pre><code class="language-java">class Box&lt;T&gt; {
+    private T value;
+}
+
+Box&lt;String&gt; box = new Box&lt;&gt;(); // compiler enforces String only
+</code></pre>
+<hr />
+<p><strong>44. What is the Optional class and why is it useful?</strong></p>
+<ul>
+<li>A wrapper that forces you to deal with the possibility of a missing value</li>
+<li>Instead of returning <code>null</code> and hoping the caller checks, you return <code>Optional</code></li>
+<li>Eliminates a whole category of <code>NullPointerException</code> bugs</li>
+</ul>
+<pre><code class="language-java">Optional&lt;String&gt; name = findUser(id).map(User::getName);
+name.ifPresentOrElse(n  -&gt;System.out.println(&quot;Hello &quot;+n), ()-&gt;System.out.println(&quot;User not found&quot;));
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
